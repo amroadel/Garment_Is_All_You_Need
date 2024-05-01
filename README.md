@@ -1,6 +1,7 @@
 # Garment Is All You Need
 This project is a class project for the Deep Learning for Computer Vision course at Georgetown University, CS Department.
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aTqSRQMwQn15a_HAGl2GPALJaaV1DMjv?usp=sharing)
 
 **Garment is all you need** is a diffusion-based system that enables the generation of virtual try-on images using only a garment image. This system allows for the customization of the generated model images through textual prompts. Users can control various aspects such as the model's facial features, body features, and even the modeling style, setting, and environment.
 
@@ -35,3 +36,7 @@ Our system architecture and workflow:
     ```bash
    pip install -r equirements.txt
 
+By:
+- Amro Abdalla
+- Mohamed Ahmed
+- Iyad Ait Hou
