@@ -1,0 +1,29 @@
+{
+    "negative_prompt": "(deformed iris, deformed pupils, semi-realistic, cgi, 3d, half-body render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck (3D,3D Game, 3D Game Scene, 3D Character:1.1) (airbrushed, cartoon, anime, semi- realistic, cgi, render, blender, digital art, manga, amateur:1.3, child, kid, painting, cartoon, drawing. revealing, sexy, bikini, hot short, shorts, exposed, doubles, extra hands, extra leg, extra person, duplicates, extra head, bra, pantie, child, kid, teenager)",
+    "facial_features": {
+            "gender": "female",
+            "race": "arab",
+            "additional_details": "student",
+            "hair": {
+                "color": "blue",
+                "style": "wavey",
+                "length": "short"
+            },
+            "eyes": {
+                "description": "big brown eyes"
+            },
+            "additional_face_features": "narrow nose"
+    }, 
+    "body_features": {
+        "height": "short",
+        "weight": "thin",
+        "additional_body_features": "leg tattoo",
+        "clothing": {
+            "top": "t-shirt",
+            "bottom": "shorts"
+        },
+        "pose": "pose",
+        "background": "grey"
+    }
+    
+}

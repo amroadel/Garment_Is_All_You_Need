@@ -21,3 +21,5 @@ ip_adapter==0.1.0
 safetensors
 onnxruntime-gpu
 omegaconf
+open_clip_torch
+clip-interrogator
