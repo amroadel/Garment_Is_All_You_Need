@@ -30,7 +30,7 @@ Our system architecture and workflow:
 ## Installation
 1. Clone the repository
     ```bash
-    git clone https://github.com/levihsu/OOTDiffusion
+    git clone https://github.com/amroadel/Garment_Is_All_You_Need
 2. Install the required packages:
     ```bash
    pip install -r equirements.txt
