@@ -27,4 +27,4 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/cam
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SUPIR/resolve/main/clip-vit-large-patch14.tar -d OOTDiffusion/checkpoints -o clip-vit-large-patch14.tar
 
 mkdir -p OOTDiffusion/checkpoints/clip-vit-large-patch14
-tar -xvf clip-vit-large-patch14.tar -C OOTDiffusion/checkpoints/clip-vit-large-patch14
+tar -xvf OOTDiffusion/checkpoints/clip-vit-large-patch14.tar -C OOTDiffusion/checkpoints/clip-vit-large-patch14
