@@ -2,7 +2,7 @@
 This project is a class project for the Deep Learning for Computer Vision course at Georgetown University, CS Department.
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aTqSRQMwQn15a_HAGl2GPALJaaV1DMjv?usp=sharing)
-[![Open in Colab](https://banner2.cleanpng.com/20181123/aoh/kisspng-google-docs-google-slides-google-drive-g-suite-pre-richardampaposs-blog-5bf78b1fc0a5d7.5204276215429496637891.jpg)](https://docs.google.com/presentation/d/1dL7FUgq1JgpFcSPc53SYQYSqxgk73skc4XaboSzUAak/edit?usp=sharing)
+[SLides](https://docs.google.com/presentation/d/1dL7FUgq1JgpFcSPc53SYQYSqxgk73skc4XaboSzUAak/edit?usp=sharing)
 
 
 **Garment is all you need** is a diffusion-based system that enables the generation of virtual try-on images using only a garment image. This system allows for the customization of the generated model images through textual prompts. Users can control various aspects such as the model's facial features, body features, and even the modeling style, setting, and environment.
