@@ -12,7 +12,7 @@ gradio==4.16.0
 config==0.5.1
 einops==0.7.0
 onnxruntime==1.16.2
-torch==2.3.0
+torch==2.0.1
 torchvision==0.15.2
 torchaudio==2.0.2
 huggingface_hub==0.22.2
