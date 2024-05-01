@@ -3,7 +3,7 @@ scipy
 scikit-image
 opencv-python==4.7.0.72
 Pillow==10.3.0
-diffusers
+diffusers==0.24.0
 transformers==4.36.2
 accelerate==0.26.1
 matplotlib==3.7.4

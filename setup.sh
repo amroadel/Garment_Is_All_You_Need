@@ -1,9 +1,9 @@
 pip install git+https://github.com/tencent-ailab/IP-Adapter.git
 pip install -r requirements.txt
-git submodule update --init
+# git submodule update --init
 
 # cd OOTDiffusion
-
+git clone -b dev https://github.com/camenduru/OOTDiffusion
 apt -y install -qq aria2
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/OOTDiffusion/resolve/main/images/demo.png -d OOTDiffusion/images -o demo.png
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/OOTDiffusion/resolve/main/checkpoints/humanparsing/exp-schp-201908261155-lip.pth -d OOTDiffusion/checkpoints/humanparsing -o exp-schp-201908261155-lip.pth
@@ -27,4 +27,7 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/cam
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/SUPIR/resolve/main/clip-vit-large-patch14.tar -d OOTDiffusion/checkpoints -o clip-vit-large-patch14.tar
 
 mkdir -p OOTDiffusion/checkpoints/clip-vit-large-patch14
-tar -xvf OOTDiffusion/checkpoints/clip-vit-large-patch14.tar -C OOTDiffusion/checkpoints/clip-vit-large-patch14
+cd OOTDiffusion/checkpoints/clip-vit-large-patch14
+tar -xvf ../clip-vit-large-patch14.tar 
+cd ../../..
+# tar -xvf OOTDiffusion/checkpoints/clip-vit-large-patch14.tar -C OOTDiffusion/checkpoints/clip-vit-large-patch14
