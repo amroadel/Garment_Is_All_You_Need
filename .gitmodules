@@ -1,0 +1,3 @@
+[submodule "OOTDiffusion"]
+	path = OOTDiffusion
+	url = https://github.com/levihsu/OOTDiffusion
