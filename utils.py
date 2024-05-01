@@ -153,17 +153,17 @@ def get_propmpts(prompt_config_path, garment_description=None, garment_type=None
     if garment_description:
 
         if garment_type == "top":
-            clothing = garment_description + " " + body_features["clothing"]["bottom"]
+            clothing = " ".join(garment_description.split()[:10]) + " " + body_features["clothing"]["bottom"]
         elif garment_type == "bottom":
-            clothing = body_features["clothing"]["top"] + " " + garment_description
+            clothing = body_features["clothing"]["top"] + " " + " ".join(garment_description.split()[:10])
         else:
-            clothing = garment_description
+            clothing = " ".join(garment_description.split()[:10])
         
     # Fill the body prompt template
     body_prompt = f'''
-        a ({body_features["height"]} body: 1.4) photograph of a ({facial_features["gender"]}: 2.0) 
+        a ({body_features["height"]} body: 1.4) fullbody photograph of a ({facial_features["gender"]}: 2.0) 
         fashion model wearing ({clothing}: 1.5), {facial_features["hair"]["length"]} ({facial_features["hair"]["color"]}: 1.4) {facial_features["hair"]["style"]} hair, 
-        {body_features["pose"]} pose, {body_features["background"]} background, all body, shoes, below knee, jeans pants, single, ({body_features["height"]} body: 1.4)
+        {body_features["pose"]} pose, {body_features["background"]} background, zoomout, below knee
     '''
 
 

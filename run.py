@@ -110,6 +110,12 @@ def main():
         vae_model_path="stabilityai/sdxl-vae"
         face_pipe = load_pipeline(base_model_path, vae_model_path, args.device, USE_XL=True, from_file=True)
         face_images = generate_face(face_pipe, face_prompt, negative_prompt, args.num_inference_steps, args.num_samples)
+
+        if os.path.exists("results/face_images"):
+            os.makedirs("results/face_images", exist_ok=True)
+        for i, face_image in enumerate(face_images):
+            face_image.save(f"results/face_images/face_image_{i}.png")
+
         del face_pipe
         torch.cuda.empty_cache()
     else:
@@ -124,8 +130,14 @@ def main():
     body_images = generate_body(face_images, body_prompt, negative_prompt, face_strength=1.3, likeness_strength=1, 
                                 ip_ckpt=ip_ckpt, body_pipe=body_pipe, USE_XL=False, preserve_face_structure=True, num_inference_steps=args.num_inference_steps, 
                                 num_samples=args.num_samples, device=args.device)
+    
+    if os.path.exists("results/body_images"):
+        os.makedirs("results/body_images", exist_ok=True)
+    for i, face_image in enumerate(face_images):
+        face_image.save(f"results/face_images/face_image_{i}.png")
+
     del body_images
     torch.cuda.empty_cache()
     
-    # Save the generated images
-    save_data(body_images, args.output_folder, args.image_name)
+    # # Save the generated images
+    # save_data(body_images, args.output_folder, args.image_name)
