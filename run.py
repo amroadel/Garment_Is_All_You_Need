@@ -100,7 +100,7 @@ def main():
 
     # Load garment image
     garment_image = Image.open(args.garment_path)
-    garment_description = image_to_prompt(garment_image, mode='best')
+    garment_description = image_to_prompt(garment_image, mode='classic')
 
     negative_prompt, face_prompt, body_prompt = get_propmpts(args.prompt_config, garment_description, garment_type=args.garment_type)
 
@@ -141,3 +141,6 @@ def main():
     
     # # Save the generated images
     # save_data(body_images, args.output_folder, args.image_name)
+
+if __name__ == "__main__":
+    main()

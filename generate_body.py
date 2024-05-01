@@ -35,7 +35,7 @@ def get_face_embeddings(face_images, preserve_face_structure=True):
             face = np.array(face)
             face = cv2.cvtColor(face, cv2.COLOR_RGB2BGR)
         elif isinstance(image, Image.Image):  # PIL image
-            face = pad_face(face)
+            face = pad_face(image)
             face = np.array(face)
             face = cv2.cvtColor(face, cv2.COLOR_RGB2BGR)
         else:
