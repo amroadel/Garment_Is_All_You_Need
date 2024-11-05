@@ -41,4 +41,3 @@ Our system architecture and workflow:
 By:
 - Amro Abdalla
 - Mohamed Ahmed
-- Iyad Ait Hou
